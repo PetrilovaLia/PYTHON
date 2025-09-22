@@ -1,5 +1,7 @@
+#slovník na ukladanie kontaktov meno:čislo
 kontakty = {}
 
+#nekonečný cyklus, kým nezvolím "4"
 while True:
     print("\n--- Telefónny zoznam ---")
     print("1. Pridať kontakt")
@@ -14,6 +16,7 @@ while True:
         kontakty[meno] = cislo
         print("Kontakt bol pridaný.")
 
+#Program sa pokúsi nájsť číslo pomocou kontakty.get(meno)
     elif volba == "2":
         meno = input("Zadajte meno kontaktu: ")
         cislo = kontakty.get(meno)
