@@ -16,7 +16,7 @@ while True:
         kontakty[meno] = cislo
         print("Kontakt bol pridaný.")
 
-
+#kontakty.items() vracia dvojice (meno, cislo)
     elif volba == "2":
         if kontakty:
             print("Všetky kontakty:")
@@ -26,6 +26,7 @@ while True:
             print("Zoznam kontaktov je prázdny.")
             
 #Program sa pokúsi nájsť číslo pomocou kontakty.get(meno)
+#get vráti číslo, ak meno existuje, alebo None, ak neexistuje (vtedy vypíše „Kontakt sa nenašiel“)
     elif volba == "3":
         meno = input("Zadajte meno kontaktu: ")
         cislo = kontakty.get(meno)
