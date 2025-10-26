@@ -36,8 +36,30 @@ while True:
     print(counter)
     counter += 1
 
-# Opat ho vieme pouzit vo for cikle
+# Opat ho vieme pouzit vo for cykle
 for i in [1,2,3,4]:
     if i == 2:
         continue
     print(i)
+
+
+# co vypise kod
+# Naxtaxliax
+string = 'Natalia'
+for character in string:
+    print(character)
+    if character == 'a':
+        print('x')
+
+# parne cisla
+counter = 1
+while counter < 10:
+    counter += 1 
+    if counter % 2 == 1:
+        continue
+    print(counter)
+
+# nerozumiem
+for riadok in range(1,5):
+    for stlpec in range(1,riadok):
+        print(stlpec)
